@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storageAccounts_contosocoffeestgact_name": {
+            "value": null
+        },
+        "trafficManagerProfiles_contosocoffee_name": {
+            "value": null
+        },
+        "registries_contosocoffeeregistry_name": {
+            "value": null
+        },
+        "containerGroups_contosocoffeelondon_name": {
+            "value": null
+        },
+        "containerGroups_contosocoffeenewyork_name": {
+            "value": null
+        }
+    }
+}
