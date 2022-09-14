@@ -42,6 +42,12 @@ Dave requires admin access to the resources hosted on Azure for the Contoso Coff
 
 Mark will require read-only access to the Contoso Coffee resources. He will therefore get read-only access scoped to the resource group. 
 
+
+
+
+
+
+
 ## Load Balancing and Geo-redundent access
 
 Contoso Coffee will operate in London and New York, because of this a solution will need to be configured that allows the US users to access a more local server than London and vice versa. Load balancing can be achieved through DNS redirection or a geo-load balanced solution.
