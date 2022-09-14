@@ -10,8 +10,13 @@
         },
         "containerName": {
             "type": "string"
-        }
-        
+        },
+        "imageType": {
+            "type": "string",
+            "allowedValues": [
+                "Public",
+                "Private"
+            ]
         },
         "imageName": {
             "type": "string"
