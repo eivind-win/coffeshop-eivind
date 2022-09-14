@@ -12,6 +12,8 @@ Difficulty Level 3: Host the Docker Container solution via Azure Container Regis
 
 Contoso Coffee is a small coffee house that is opening soon in London and New York, they are looking for a cloud hosted solution for their website and data storage, costs must be kept to a minimum.
 
+## Our solution to meet the requirements
+
 Here is the steps to create the project. 
 
 1. Build a docker image 
@@ -20,11 +22,13 @@ Here is the steps to create the project.
 
 3. Create a container registry in Azure. 
 
-4. Create two Azure container instances (ACI) that runs the website in both London and New York. It has to be in different regions because.
+4. Create two Azure container instances (ACI) that runs the website in both London and New York. It has to be in different regions to be redundant. 
 
-5. Then loadbalance those two with geo-redundancy. We chose Traffic Manager. Can use Front door as well. 
+5. Then loadbalance those two with geo-redundancy. We chose Traffic Manager. 
 
 6. Create a storage account with blob storage and create a lifecycle management rule that says move to Archive tier after 30 days. Here we created a SAS key that can last for x amount of time. 
+
+7. Create a static web app that displays pictures from the blob container. 
 
 ## User accounts
 
@@ -50,8 +54,6 @@ Mark will require read-only access to the Contoso Coffee resources. He will ther
 
 Contoso Coffee will operate in London and New York, because of this a solution will need to be configured that allows the US users to access a more local server than London and vice versa. Load balancing can be achieved through DNS redirection or a geo-load balanced solution.
 
-
-
 ![ContosoCoffee_Website hosting (3).png](assets/42bd992c105c28ef62999103e03df026410634d4.png)
 
 ## Storage
@@ -61,7 +63,5 @@ Contoso Coffee will operate in London and New York, because of this a solution w
 - Needs blob container. 
 
 Contoso coffee is planning to store a large amount of image information that will be shared with staff members and clients. These images will be scans of 35 and 120 film for hipster photography that will be displayed around the coffee shop. The storage solution should minimize costs by automatically archiving data onto slower storage when required. A SAS key solution should be created for a future image gallery solution to display images on a TV in the Coffee Shop running a small Raspberry Pi solution locally hosting a web page to display the images. Bonus points for creating an image display web app.
-
-
 
 ![Blank diagram.png](assets/2585d238afb02d3fb31dfe83d72baaeb4d14148c.png)
