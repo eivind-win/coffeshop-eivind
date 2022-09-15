@@ -2,11 +2,9 @@
 
 ## The coffeeShop case study
 
-In this project we created two websites both located in New York and London. 
+In this project we created two websites both located in New York and London. One called contosocoffeelondon and the other contosocoffeenewyork. 
 
-The one called, contosocoffeelondon and the other contosocoffeenewyork. 
-
-Difficulty Level 3: Host the Docker Container solution via Azure Container Registries and pull into an Azure ACI solution.
+We chose the Difficulty Level 3: Host the Docker Container solution via Azure Container Registries and pull into an Azure ACI solution.
 
 ## Company Overview
 
